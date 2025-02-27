@@ -1,0 +1,215 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #661d00;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Hamburger Menu Animation */
+.bar.change:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.change:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.change:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #003366;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar.active {
+    transform: translateX(0);
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-image: url('https://kmtc.ac.ke/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.about-section, .programs-section, .admissions-section, .news-section, .contact-section {
+  margin-bottom: 40px;
+}
+.admissions-section{
+  padding: 20px;
+}
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.download{
+  background-color: #661d00;
+  color: white;
+  padding: 5.5px;
+}
+.contact-section{
+  height: 70vh;
+  padding: 20px;
+}
+.news-section{
+  height: 70vh;
+  padding: 20px;
+}
+.program-card {
+  background-color: #d62d2d;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: white;
+}
+
+.footer {
+  background-color: #662900;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+.about-section{
+  padding: 20px;
+}
+form{
+  margin: auto;
+  text-align: center;
+  background-color: rgb(202, 185, 185);
+  padding: 5.5px;
+  border-radius: 5.5px;
+}
+textarea{
+  padding: 20px;
+  border-radius: 5.7px;
+}
+input[type="email"]{
+  padding: 5.5px;
+  border-radius: 5.5px;
+  margin: 5.5px;
+  border-color: #661d00;
+}
+input[type="text"]{
+  padding: 5.5px;
+  border-radius: 5.5px;
+  margin: 5.5px;
+  border-color: #661d00
+}
+.home-ones{
+  color: black;
+}
+figure{
+  padding: 12px;
+}
+img{
+  width: 100%;
+}
